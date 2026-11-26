@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quiosque da Luciane (nome provisório) | Flores e drinks na Ilha do Mel</title>
+<meta name="description" content="Flores de escamas de peixe, mini luminárias, batidas e caipirinhas em Encantadas, Ilha do Mel.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d1433">
+<link rel="icon" type="image/webp" href="img/logo-luflowers.webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiosque da Luciane | Flores e drinks na Ilha do Mel">
+<meta property="og:description" content="Flores que acendem, batidas e caipirinhas.">
+<meta property="og:image" content="https://graficoscripto-cmyk.github.io/quiosque-luciane-ilha-do-mel/og-quiosque-luciane-2026.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Albert+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/flor-rosa.webp">
+<style>
+:root{--night:#1d1433;--plum:#35205c;--pink:#e8457e;--amber:#ffb43a;--teal:#0f8f8a;--cream:#fff4e8;--ink:#2a1a3e;--h:'Young Serif',Georgia,serif;--b:'Albert Sans',system-ui,sans-serif;--r:26px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--b);background:var(--night);color:#e8dff7;line-height:1.6;font-size:16px;overflow-x:clip}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+.wrap{width:min(1100px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:1.1;color:#fff}
+h2{font-size:clamp(32px,8.6vw,54px)}
+.kick{display:block;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+.pad{padding:84px 0}
+section{position:relative}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;font-weight:800;font-size:15px;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn-pri{background:var(--amber);color:#331c00}
+.btn-sec{border:1.5px solid rgba(255,255,255,.42);color:#fff}
+.light{background:var(--cream);color:var(--ink)}
+.light h2,.light h3{color:var(--ink)}.light .kick{color:#b01f58}
+
+#nav{position:fixed;top:10px;left:10px;right:10px;max-width:1100px;margin:auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 6px 5px 8px;border-radius:999px;background:rgba(29,20,51,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.18);transition:transform .3s ease}
+.brand{display:flex;align-items:center;min-width:50px;min-height:50px}
+.brand img{width:50px;height:50px}
+#nav .links{display:none;gap:4px}
+#nav .links a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;font-weight:800;font-size:14px;color:#fff}
+#nav .rt{display:flex;gap:6px}
+#nav .res{min-height:44px;padding:0 20px;font-size:14px}
+#menuBtn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.3)}
+#menuBtn i{display:block;width:18px;height:2px;background:#fff;box-shadow:0 6px 0 #fff,0 -6px 0 #fff}
+#drop{position:fixed;top:78px;left:10px;right:10px;max-width:320px;margin-left:auto;z-index:49;display:none;flex-direction:column;padding:8px;border-radius:22px;background:rgba(29,20,51,.97);border:1px solid rgba(255,255,255,.18)}
+#drop.open{display:flex}
+#drop a{min-height:52px;display:flex;align-items:center;padding:0 16px;font-family:var(--h);font-size:21px;color:#fff}
+@media(min-width:761px){#nav .links{display:flex}#menuBtn{display:none}}
+
+#hero{min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.hero-img{position:relative;height:55svh;min-height:340px;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:48% 55%;transform-origin:50% 45%;animation:respira 14s ease-in-out infinite}
+@keyframes respira{50%{transform:scale(1.07)}}
+.hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,20,51,.3),transparent 24%,transparent 70%,var(--night))}
+.hero-txt{position:relative;z-index:2;margin-top:-24px;padding-bottom:80px}
+.tag{display:inline-flex;min-height:32px;align-items:center;padding:0 14px;border-radius:999px;border:1px solid rgba(255,180,58,.55);color:var(--amber);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+h1{font-size:clamp(38px,11vw,76px)}
+.lead{margin:12px 0 6px;font-size:19px;color:#f4ecff;max-width:460px}
+.prov{font-size:13px;color:#b8a8da;margin-bottom:20px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+@media(min-width:861px){
+ #hero{display:grid;grid-template-columns:1fr 1.05fr}
+ .hero-img{order:2;height:auto;min-height:100svh}
+ .hero-img img{position:absolute;inset:0}
+ .hero-img:after{background:linear-gradient(90deg,var(--night),transparent 24%)}
+ .hero-txt{margin:0;display:flex;align-items:center;padding:100px 0 60px}
+ .hero-txt .wrap{width:auto;margin:0;padding:0 20px 0 max(28px,calc((100vw - 1100px)/2))}
+ h1{font-size:clamp(48px,5.4vw,78px)}
+}
+
+/* flor autoral que acende */
+#luz{background:radial-gradient(circle at 50% 38%,rgba(255,180,58,calc(var(--g,0) * .34)),transparent 62%),var(--night);overflow:hidden;text-align:center}
+.bloom{width:min(380px,86vw);margin:22px auto 6px}
+.bloom svg{width:100%;height:auto;overflow:visible}
+.pt{transform-box:view-box;transform-origin:200px 200px;transition:transform 1.1s cubic-bezier(.3,1.35,.4,1)}
+.bloom:not(.on) .pt{transform:scale(.46) rotate(-26deg)}
+.core{opacity:0;transition:opacity 1s}
+.bloom.on .core{opacity:1;animation:pulsa 2.8s ease-in-out infinite}
+@keyframes pulsa{50%{opacity:.72}}
+#luz p{max-width:420px;margin:0 auto 20px;color:#d9ccf2}
+@media(min-width:761px){#luz .btn{min-width:240px}}
+
+.gal{display:grid;gap:16px;margin-top:34px}
+.ph{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 28px 54px -28px rgba(42,26,62,.75)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(29,20,51,.85);color:#fff;border-radius:14px;padding:7px 13px;font-size:13px;font-weight:800;line-height:1.35}
+.ph.a{aspect-ratio:5/4}.ph.b{aspect-ratio:16/10}
+@media(min-width:761px){.gal{grid-template-columns:1fr 1fr}.ph.b{grid-column:1/-1;aspect-ratio:16/9}}
+
+#drinks{background:linear-gradient(180deg,var(--plum),var(--night))}
+.menu{display:grid;gap:14px;margin-top:30px}
+.m{border-radius:var(--r);padding:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);display:flex;gap:18px;align-items:center}
+.m svg{flex:none;width:64px;height:84px}
+.m h3{font-size:23px;margin-bottom:4px}
+.m p{color:#d9ccf2;font-size:15px}
+.liq{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);transition:transform 1.3s cubic-bezier(.25,1,.4,1) .15s}
+.m.on .liq{transform:scaleY(1)}
+.age{font-size:13px;color:#b8a8da;margin-top:16px}
+@media(min-width:761px){.menu{grid-template-columns:1fr 1fr}}
+
+#monte{background:linear-gradient(180deg,var(--night),#0d3f4d)}
+.sim{display:grid;gap:26px;margin-top:30px}
+.grp{margin-bottom:22px}
+.grp h3{font-family:var(--b);font-weight:800;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;min-width:46px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.07);font-weight:700;font-size:14px;color:#fff}
+.chip[aria-pressed=true]{background:var(--cream);border-color:var(--cream);color:var(--ink)}
+.in{width:100%;min-height:50px;border-radius:14px;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;padding:0 16px;font:inherit}
+.in::placeholder{color:#bfb0dd}
+.prev{background:#100a20;border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:22px;align-self:start}
+.bub{margin:8px 0 18px;background:#17402f;color:#eafff0;border-radius:6px 18px 18px 18px;padding:14px 16px;font-size:15px;white-space:pre-line}
+.prev .btn{width:100%;background:#25d366;color:#04200f}
+@media(min-width:861px){.sim{grid-template-columns:1.2fr 1fr;gap:50px}.prev{position:sticky;top:100px}}
+
+.where{display:grid;gap:22px;margin-top:28px}
+.where .ph{aspect-ratio:4/5;max-height:520px}
+.card{background:#fff;border-radius:var(--r);padding:24px;box-shadow:0 18px 40px -28px rgba(42,26,62,.8)}
+.card p{margin-bottom:16px}
+.card .btn{background:var(--ink);color:#fff}
+@media(min-width:761px){.where{grid-template-columns:1fr 1fr;align-items:center}}
+footer{background:#100a20;padding:40px 0 108px;font-size:13px;color:#a999cc;text-align:center}
+footer img{width:130px;height:130px;margin:0 auto 14px}
+footer p{margin-bottom:8px}
+footer a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;text-decoration:underline}
+#wa{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;z-index:60;box-shadow:0 10px 26px rgba(0,0,0,.45)}
+#wa svg{width:30px;height:30px}
+#intro{position:fixed;inset:0;z-index:100;background:var(--night);display:grid;place-items:center;animation:sai .35s ease .95s forwards}
+#intro img{width:min(270px,68vw);animation:abre .85s cubic-bezier(.2,.9,.25,1) both}
+@keyframes abre{from{transform:scale(.55) rotate(-24deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes sai{to{opacity:0;visibility:hidden}}
+.rev{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rev{opacity:1;transform:none}#intro{display:none}}
+</style>
+<noscript><style>.rev{opacity:1;transform:none}#intro{display:none}.liq{transform:none}</style></noscript>
+</head>
+<body>
+<div id="intro" aria-hidden="true"><img src="img/logo-luflowers.webp" alt=""></div>
+<header id="nav">
+  <a class="brand" href="#topo" aria-label="Início"><img src="img/logo-luflowers.webp" alt="LufLowers Ilha do Mel" width="50" height="50"></a>
+  <nav class="links" aria-label="Principal"><a href="#flores">Flores</a><a href="#drinks">Drinks</a><a href="#onde">Onde fica</a></nav>
+  <div class="rt"><a class="btn btn-pri res" href="#monte">Pedir</a><button id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i></button></div>
+</header>
+<nav id="drop" aria-label="Menu"><a href="#flores">Flores</a><a href="#drinks">Drinks</a><a href="#onde">Onde fica</a></nav>
+
+<main id="topo">
+<section id="hero">
+  <div class="hero-img"><img src="img/flor-rosa.webp" alt="Flor artesanal rosa feita de escamas de peixe, acesa por dentro" width="1130" height="1107" fetchpriority="high"></div>
+  <div class="hero-txt"><div class="wrap">
+    <span class="tag">Encantadas · Ilha do Mel</span>
+    <h1>Quiosque da Luciane</h1>
+    <p class="lead">Flores que acendem e drinks simples, feitos com carinho.</p>
+    <p class="prov">Nome provisório, até o quiosque ganhar o nome dele.</p>
+    <div class="cta"><a class="btn btn-pri" href="#monte">Monte seu pedido</a><a class="btn btn-sec" href="#flores">Ver as flores</a></div>
+  </div></div>
+</section>
+
+<section id="luz" class="pad">
+  <div class="wrap">
+    <span class="kick rev">Feitas de escamas de peixe</span><h2 class="rev">Acenda a flor</h2>
+    <div class="bloom" id="bloom">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Flor de pétalas em forma de escama que se abre e acende"><defs>
+        <radialGradient id="gp" cx="50%" cy="85%" r="90%"><stop offset="0" stop-color="#ffe6b0"/><stop offset=".55" stop-color="#fff3ee"/><stop offset="1" stop-color="#e8457e"/></radialGradient>
+        <radialGradient id="gb" cx="50%" cy="85%" r="90%"><stop offset="0" stop-color="#ffe9b8"/><stop offset=".55" stop-color="#eafaf8"/><stop offset="1" stop-color="#2b7fd0"/></radialGradient>
+        <radialGradient id="gl"><stop offset="0" stop-color="#fffbe8"/><stop offset=".35" stop-color="#ffc54a" stop-opacity=".95"/><stop offset="1" stop-color="#ffb43a" stop-opacity="0"/></radialGradient></defs>
+        <g id="petals"></g><circle class="core" cx="200" cy="200" r="86" fill="url(#gl)"/></svg>
+    </div>
+    <p class="rev">Criação própria: flores artesanais e mini luminárias.</p>
+    <button class="btn btn-sec rev" id="sw" aria-pressed="false">Acender a luz</button>
+  </div>
+</section>
+
+<section id="flores" class="pad light">
+  <div class="wrap">
+    <span class="kick rev">As flores</span><h2 class="rev">Cada uma com sua cor</h2>
+    <div class="gal">
+      <figure class="ph a rev"><img loading="lazy" src="img/flor-azul.webp" alt="Flor azul de escamas de peixe com luz no centro" width="1250" height="918"><figcaption>Azul, acesa</figcaption></figure>
+      <figure class="ph a rev"><img loading="lazy" src="img/flor-rosa.webp" alt="Flor rosa de escamas de peixe com luz no centro" width="1130" height="1107"><figcaption>Rosa, acesa</figcaption></figure>
+      <figure class="ph b rev"><img loading="lazy" src="img/flores-brancas.webp" alt="Várias flores brancas e douradas iluminadas" width="1600" height="900"><figcaption>Mini luminárias em flor</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="drinks" class="pad">
+  <div class="wrap">
+    <span class="kick rev">Para refrescar</span><h2 class="rev">Drinks e bebidas</h2>
+    <div class="menu">
+      <article class="m rev"><svg viewBox="0 0 64 84" aria-hidden="true"><clipPath id="c1"><path d="M10 14h44l-6 64H16z"/></clipPath><g clip-path="url(#c1)"><rect class="liq" x="8" y="30" width="48" height="50" fill="#e8457e"/></g><path d="M10 14h44l-6 64H16z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M36 40L48 4" stroke="#ffb43a" stroke-width="4" stroke-linecap="round"/></svg><div><h3>Batidas</h3><p>O forte da casa: morango, amendoim e maracujá.</p></div></article>
+      <article class="m rev"><svg viewBox="0 0 64 84" aria-hidden="true"><clipPath id="c2"><path d="M10 24h44l-4 52H14z"/></clipPath><g clip-path="url(#c2)"><rect class="liq" x="8" y="38" width="48" height="40" fill="#b9d94a"/></g><path d="M10 24h44l-4 52H14z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><circle cx="48" cy="22" r="13" fill="#d7ee62" stroke="#fff" stroke-width="3"/><path d="M48 12v20M38 22h20" stroke="#fff" stroke-width="1.6"/></svg><div><h3>Caipirinha</h3><p>De limão ou de maracujá.</p></div></article>
+      <article class="m rev"><svg viewBox="0 0 64 84" aria-hidden="true"><clipPath id="c3"><path d="M26 6h12v18c10 6 12 10 12 20v34H14V44c0-10 2-14 12-20z"/></clipPath><g clip-path="url(#c3)"><rect class="liq" x="12" y="36" width="40" height="44" fill="#ffb43a"/></g><path d="M26 6h12v18c10 6 12 10 12 20v34H14V44c0-10 2-14 12-20z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg><div><h3>Cerveja</h3><p>Em lata e long neck.</p></div></article>
+      <article class="m rev"><svg viewBox="0 0 64 84" aria-hidden="true"><clipPath id="c4"><path d="M12 12h40l-5 66H17z"/></clipPath><g clip-path="url(#c4)"><rect class="liq" x="10" y="32" width="44" height="48" fill="#3cc4d8"/></g><path d="M12 12h40l-5 66H17z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg><div><h3>Sem álcool</h3><p>Água e refrigerante.</p></div></article>
+    </div>
+    <p class="age rev">Bebidas alcoólicas somente para maiores de 18 anos. Beba com moderação.</p>
+  </div>
+</section>
+
+<section id="monte" class="pad">
+  <div class="wrap">
+    <span class="kick rev">Sem compromisso</span><h2 class="rev">Monte seu pedido</h2>
+    <div class="sim">
+      <div>
+        <div class="grp rev"><h3>Flores (pode marcar mais de uma opção)</h3><div class="chips multi"><button class="chip" aria-pressed="false">Flor de escamas</button><button class="chip" aria-pressed="false">Mini luminária</button></div></div>
+        <div class="grp rev"><h3>Drinks e bebidas</h3><div class="chips multi"><button class="chip" aria-pressed="false">Batida de morango</button><button class="chip" aria-pressed="false">Batida de amendoim</button><button class="chip" aria-pressed="false">Batida de maracujá</button><button class="chip" aria-pressed="false">Caipirinha de limão</button><button class="chip" aria-pressed="false">Caipirinha de maracujá</button><button class="chip" aria-pressed="false">Cerveja lata</button><button class="chip" aria-pressed="false">Long neck</button><button class="chip" aria-pressed="false">Água</button><button class="chip" aria-pressed="false">Refrigerante</button></div></div>
+        <div class="grp rev"><h3>Quando</h3><div class="chips" id="quando"><button class="chip" aria-pressed="true">Hoje</button><button class="chip" aria-pressed="false">Neste fim de semana</button><button class="chip" aria-pressed="false">Outro dia</button></div></div>
+        <div class="grp rev"><h3>Seu nome (opcional)</h3><input class="in" id="nome" type="text" placeholder="Como podemos te chamar?"></div>
+      </div>
+      <aside class="prev rev"><span class="kick">Sua mensagem</span><div class="bub" id="msg"></div><a class="btn" id="send" href="https://wa.me/5541999072739" target="_blank" rel="noopener">Enviar no WhatsApp</a></aside>
+    </div>
+  </div>
+</section>
+
+<section id="onde" class="pad light">
+  <div class="wrap">
+    <span class="kick rev">Onde fica</span><h2 class="rev">Encantadas, Ilha do Mel</h2>
+    <div class="where">
+      <figure class="ph rev"><img loading="lazy" src="img/encantadas.webp" alt="Passarela de madeira nas Encantadas, Ilha do Mel"><figcaption>Foto da região, não do quiosque. Marcos Guerra, domínio público</figcaption></figure>
+      <div class="card rev"><p>Perto da tabacaria. Peça o ponto certo e confirme o atendimento pelo WhatsApp.</p><a class="btn" href="https://wa.me/5541999072739?text=Oi%2C%20Luciane!%20Pode%20me%20passar%20onde%20fica%20o%20quiosque%3F" target="_blank" rel="noopener">Pedir a localização</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <img src="img/logo-luflowers.webp" alt="LufLowers Ilha do Mel" width="130" height="130">
+  <p><strong style="color:#fff">Quiosque da Luciane</strong> (nome provisório) · Encantadas, Ilha do Mel, PR</p>
+  <p>WhatsApp (41) 99907-2739</p>
+  <p>Prévia de design, ainda não é o site oficial. Fotos das flores e marca LufLowers enviadas ou usadas pela própria Luciane no WhatsApp.</p>
+  <p>Foto da região: <a href="https://commons.wikimedia.org/wiki/File:Encantada_1.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+</div></footer>
+
+<a id="wa" href="https://wa.me/5541999072739" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.1-2.2c1.8 1 3.8 1.5 5.9 1.5 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.3 1.4-4.1-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.5 9.8 10.2 5.2 16 5.2s10.5 4.6 10.5 10.3S21.8 25.7 16 25.7zm5.8-7.6c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.2-.6l.5-.6c.2-.2.2-.3.3-.5s.1-.4 0-.6c-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.1.8.4 1.5.6 2 .8.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg></a>
+
+<script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* flor: camadas de escamas */
+const NS='http://www.w3.org/2000/svg',g=$('#petals');
+[[10,176,'gp',0],[9,142,'gb',20],[8,110,'gp',6],[6,80,'gb',30]].forEach(([n,len,fill,off],ring)=>{
+ for(let i=0;i<n;i++){const wrap=document.createElementNS(NS,'g');wrap.setAttribute('transform',`rotate(${off+i*360/n} 200 200)`);
+  const p=document.createElementNS(NS,'path'),y=200-len,w=len*.42;
+  p.setAttribute('d',`M200 200C${200-w} ${200-len*.25} ${200-w} ${y+len*.12} 200 ${y}C${200+w} ${y+len*.12} ${200+w} ${200-len*.25} 200 200Z`);
+  p.setAttribute('fill',`url(#${ring%2?'gb':'gp'})`);p.setAttribute('stroke','rgba(255,255,255,.75)');p.setAttribute('stroke-width','1.2');p.setAttribute('opacity','.93');p.setAttribute('class','pt');p.style.transitionDelay=(ring*.12+i*.02)+'s';
+  wrap.appendChild(p);g.appendChild(wrap)}});
+const bloom=$('#bloom'),sw=$('#sw'),luz=$('#luz');
+function light(v){bloom.classList.toggle('on',v);luz.style.setProperty('--g',v?1:0);sw.setAttribute('aria-pressed',v);sw.textContent=v?'Apagar a luz':'Acender a luz'}
+sw.onclick=()=>light(!bloom.classList.contains('on'));
+/* simulador */
+let when='Hoje';
+function msg(){const n=$('#nome').value.trim(),it=$$('.multi [aria-pressed=true]').map(b=>b.textContent);
+ const t=`Oi, Luciane! ${n?'Aqui é '+n+'. ':''}Vi a prévia do quiosque.\n${it.length?'Tenho interesse em: '+it.join(', ')+'.':'Quero saber das flores e dos drinks.'}\nQuando: ${when}\nPode me confirmar?`;
+ $('#msg').textContent=t;$('#send').href='https://wa.me/5541999072739?text='+encodeURIComponent(t)}
+$$('.multi .chip').forEach(b=>b.onclick=()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');msg()});
+$$('#quando .chip').forEach(b=>b.onclick=()=>{$$('#quando .chip').forEach(c=>c.setAttribute('aria-pressed',c===b));when=b.textContent;msg()});
+$('#nome').addEventListener('input',msg);msg();
+const nav=$('#nav'),drop=$('#drop'),mb=$('#menuBtn');
+mb.onclick=()=>mb.setAttribute('aria-expanded',drop.classList.toggle('open'));
+$$('#drop a').forEach(a=>a.onclick=()=>drop.classList.remove('open'));
+let ly=scrollY;
+addEventListener('scroll',()=>{const y=scrollY;if(y>ly+4&&y>100){nav.style.transform='translateY(-150%)';drop.classList.remove('open')}else if(y<ly-6||y<60)nav.style.transform='';ly=y},{passive:true});
+if('IntersectionObserver' in window){
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});$$('.rev').forEach(e=>io.observe(e));
+ const lo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){setTimeout(()=>light(true),350);lo.disconnect()}}),{threshold:.6});lo.observe(bloom);
+}else{$$('.rev').forEach(e=>e.classList.add('on'));light(true)}
+})();
+</script>
+</body>
+</html>
